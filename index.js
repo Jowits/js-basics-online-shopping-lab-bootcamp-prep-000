@@ -8,7 +8,12 @@ function setCart(c) {
   cart = c;
   return cart;
 }
-
+function generateCartItem(itemName) {
+  return {
+    itemName:itemName,
+    itemPrice:getRandomInt(1, 100)
+  }
+}
 function addToCart(item) {
  // write your code here
  var item = generateCartItem(item)
